@@ -1,0 +1,1 @@
+forecast_id,created_utc,venue,market,question,my_prob,model_prob,market_mid,market_bid,market_ask,market_last,close_utc,note,outcome,resolved_utc
