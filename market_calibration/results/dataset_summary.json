@@ -1,0 +1,217 @@
+{
+ "generated_from": "data/markets.csv",
+ "max_staleness_hours": 24.0,
+ "window": [
+  "2026-08-25T00:00:00Z",
+  "2026-10-22T00:00:00Z"
+ ],
+ "min_volume": {
+  "kalshi": 1000.0,
+  "polymarket": 1000.0
+ },
+ "venues": {
+  "kalshi": {
+   "filters": {
+    "steps": [
+     {
+      "step": "listed",
+      "remaining": 286312,
+      "removed": 0
+     },
+     {
+      "step": "not multivariate (MVE)",
+      "remaining": 286312,
+      "removed": 0
+     },
+     {
+      "step": "binary market_type",
+      "remaining": 286312,
+      "removed": 0
+     },
+     {
+      "step": "settled YES/NO (no scalar/void)",
+      "remaining": 282822,
+      "removed": 3490
+     },
+     {
+      "step": "close in 2026-08-25..2026-10-21",
+      "remaining": 282822,
+      "removed": 0
+     },
+     {
+      "step": "volume >= 1000",
+      "remaining": 135932,
+      "removed": 146890
+     },
+     {
+      "step": "stratified sample",
+      "remaining": 20000,
+      "removed": 115932
+     }
+    ],
+    "n_events_listed": 300800,
+    "n_active_series": 4127,
+    "n_series_listed": 2400,
+    "n_series_truncated_at_1000": 112
+   },
+   "n_markets": 20000,
+   "n_events": 4961,
+   "n_series": 1010,
+   "markets_by_category": {
+    "sports": 7948,
+    "economics": 3592,
+    "weather": 2907,
+    "culture": 2638,
+    "science_tech": 1230,
+    "politics": 1166,
+    "crypto": 519
+   },
+   "horizons": {
+    "7d": {
+     "status_counts": {
+      "none": 18458,
+      "ok": 1472,
+      "stale": 70
+     },
+     "n_ok": 1472,
+     "n_events_ok": 489,
+     "staleness_hours_median": 6.0,
+     "staleness_hours_p90": 20.0,
+     "yes_rate": 0.422554347826087
+    },
+    "24h": {
+     "status_counts": {
+      "none": 10417,
+      "ok": 7769,
+      "stale": 1814
+     },
+     "n_ok": 7769,
+     "n_events_ok": 2389,
+     "staleness_hours_median": 1.0947222222222222,
+     "staleness_hours_p90": 13.0,
+     "yes_rate": 0.3381387565967306
+    },
+    "1h": {
+     "status_counts": {
+      "ok": 16321,
+      "none": 2031,
+      "stale": 1648
+     },
+     "n_ok": 16321,
+     "n_events_ok": 4362,
+     "staleness_hours_median": 0.9302777777777778,
+     "staleness_hours_p90": 9.983333333333333,
+     "yes_rate": 0.3835549292322774
+    }
+   },
+   "scheduled_close_share": 0.86705
+  },
+  "polymarket": {
+   "filters": {
+    "steps": [
+     {
+      "step": "listed",
+      "remaining": 311128,
+      "removed": 0
+     },
+     {
+      "step": "Yes/No outcomes",
+      "remaining": 197657,
+      "removed": 113471
+     },
+     {
+      "step": "UMA resolved to exactly 1/0",
+      "remaining": 196268,
+      "removed": 1389
+     },
+     {
+      "step": "has YES token id",
+      "remaining": 196268,
+      "removed": 0
+     },
+     {
+      "step": "close in 2026-08-25..2026-10-21",
+      "remaining": 133384,
+      "removed": 62884
+     },
+     {
+      "step": "volume >= 1000",
+      "remaining": 46685,
+      "removed": 86699
+     },
+     {
+      "step": "stratified sample",
+      "remaining": 5500,
+      "removed": 41185
+     }
+    ],
+    "sport_days": [
+     "2026-08-26",
+     "2026-09-01",
+     "2026-09-07",
+     "2026-09-13",
+     "2026-09-19",
+     "2026-09-25",
+     "2026-10-01",
+     "2026-10-07",
+     "2026-10-13",
+     "2026-10-19"
+    ]
+   },
+   "n_markets": 5500,
+   "n_events": 1389,
+   "n_series": 622,
+   "markets_by_category": {
+    "weather": 1640,
+    "sports": 861,
+    "crypto": 755,
+    "economics": 687,
+    "culture": 635,
+    "politics": 558,
+    "science_tech": 361,
+    "other": 3
+   },
+   "horizons": {
+    "7d": {
+     "status_counts": {
+      "none": 3776,
+      "ok": 1724
+     },
+     "n_ok": 1724,
+     "n_events_ok": 508,
+     "staleness_hours_median": 0.9763888888888889,
+     "staleness_hours_p90": 0.9955555555555555,
+     "yes_rate": 0.2679814385150812
+    },
+    "24h": {
+     "status_counts": {
+      "ok": 4821,
+      "none": 679
+     },
+     "n_ok": 4821,
+     "n_events_ok": 1185,
+     "staleness_hours_median": 0.9919444444444444,
+     "staleness_hours_p90": 0.9958333333333333,
+     "yes_rate": 0.2549263638249326
+    },
+    "1h": {
+     "status_counts": {
+      "ok": 5160,
+      "none": 340
+     },
+     "n_ok": 5160,
+     "n_events_ok": 1322,
+     "staleness_hours_median": 0.9927777777777778,
+     "staleness_hours_p90": 0.9961111111111111,
+     "yes_rate": 0.2641472868217054
+    }
+   },
+   "close_source_counts": {
+    "end": 2336,
+    "game_start": 2255,
+    "closed": 909
+   },
+   "scheduled_close_share": 0.8347272727272728
+  }
+ }
+}
