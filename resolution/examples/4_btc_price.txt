@@ -1,0 +1,3 @@
+Title: Bitcoin above $150,000 on December 31?
+
+This market will resolve to "Yes" if the Binance BTC/USDT 1-minute candle for 12:00 ET on December 31, 2026 has a final "Close" price above $150,000. Otherwise, this market will resolve to "No". The resolution source is Binance, specifically the BTC/USDT pair; other exchanges and pairs will not be considered. If Binance is unavailable, the same candle on Coinbase BTC/USD will be used.

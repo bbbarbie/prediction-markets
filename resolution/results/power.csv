@@ -1,0 +1,5 @@
+scenario,stripped,samples,fires,mean_diff,test_markets,test_disputed
+leak,False,100,92.0,0.3880604910696877,531.59,13.48
+leak,True,100,0.0,-0.010063359280887313,531.59,13.48
+none,True,100,3.0,-0.0005253925349370287,531.46,13.99
+words,True,100,31.0,0.06840184711322271,525.69,20.24

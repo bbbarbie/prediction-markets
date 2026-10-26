@@ -1,0 +1,5 @@
+Title: Will Country A and Country B announce a permanent peace deal by March 31?
+
+This market will resolve to "Yes" if Country A and Country B announce a permanent peace deal by March 31, 2026. Otherwise, this market will resolve to "No".
+
+The resolution source for this market will be a consensus of credible reporting.

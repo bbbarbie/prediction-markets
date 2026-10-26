@@ -1,0 +1,3 @@
+scenario,stripped,samples,fires,mean_diff,test_markets,test_disputed
+none,True,30,3.3333333333333335,-0.003495531885962974,1785.2,46.9
+words,True,30,70.0,0.06480685220745172,1779.0,69.16666666666667
