@@ -1,0 +1,413 @@
+{
+ "audit": {
+  "gamma_markets": 8184,
+  "pulled_at": "2026-10-20T00:00:00+00:00",
+  "api_rows": 8184,
+  "api_conditions_with_several_rows": 0,
+  "chain_logs": 589,
+  "chain_undecodable_logs": 0,
+  "chain_coverage": [
+   "2024-01-01 00:00:00+00:00",
+   "2026-10-20 00:00:00+00:00"
+  ],
+  "chain_requester_filter": [],
+  "chain_questions": 486,
+  "joined_by_question_id": 177,
+  "joined_by_text": 279,
+  "unmatched": 30,
+  "chain_requesters": {
+   "UmaCtfAdapter (neg risk)": 279,
+   "UmaCtfAdapter v3": 177,
+   "other": 30
+  },
+  "label_sources": {
+   "api": 8184,
+   "chain": 3963,
+   "gamma": 7842
+  },
+  "label_agreement_all_three": {
+   "rows": 3703,
+   "crosstab": {
+    "000": 3247,
+    "111": 456
+   }
+  },
+  "crosstab api_was_disputed x chain_disputed": {
+   "False/False": 3507,
+   "False/True": 0,
+   "True/False": 0,
+   "True/True": 456
+  },
+  "crosstab api_was_disputed x gamma_disputed": {
+   "False/False": 7386,
+   "False/True": 0,
+   "True/False": 0,
+   "True/True": 456
+  },
+  "crosstab chain_disputed x gamma_disputed": {
+   "False/False": 3247,
+   "False/True": 0,
+   "True/False": 0,
+   "True/True": 456
+  }
+ },
+ "funnel": {
+  "all markets": 8184,
+  "closed (resolution time known)": 8184,
+  "resolved through UMA": 7842,
+  "volume >= 10,000": 6084,
+  "listed on or after 2024-01-01": 6084,
+  "resolved 21+ days before the pull": 5924,
+  "has rules text": 5924,
+  "label known": 5924
+ },
+ "split": "2026-04-01",
+ "n_train": 4852,
+ "n_test": 866,
+ "disputed_train": 302,
+ "disputed_test": 55,
+ "metrics": [
+  {
+   "model": "prior",
+   "markets": 866,
+   "disputed": 55,
+   "rate": 0.06351039260969978,
+   "ROC-AUC": 0.7824571236408474,
+   "PR-AUC": 0.1767620364046081,
+   "recall@5%": 0.14545454545454545,
+   "volume recall@5%": 0.14394143624263553,
+   "lift@5%": 2.9090909090909087
+  },
+  {
+   "model": "M0",
+   "markets": 866,
+   "disputed": 55,
+   "rate": 0.06351039260969978,
+   "ROC-AUC": 0.771864140791391,
+   "PR-AUC": 0.1592530446447636,
+   "recall@5%": 0.12727272727272726,
+   "volume recall@5%": 0.09621778027467835,
+   "lift@5%": 2.545454545454545
+  },
+  {
+   "model": "M1",
+   "markets": 866,
+   "disputed": 55,
+   "rate": 0.06351039260969978,
+   "ROC-AUC": 0.8181593991704965,
+   "PR-AUC": 0.2911189473449544,
+   "recall@5%": 0.3090909090909091,
+   "volume recall@5%": 0.27820121382465135,
+   "lift@5%": 6.181818181818182
+  },
+  {
+   "model": "M2",
+   "markets": 866,
+   "disputed": 55,
+   "rate": 0.06351039260969978,
+   "ROC-AUC": 0.8232036767178567,
+   "PR-AUC": 0.27750253226893273,
+   "recall@5%": 0.2909090909090909,
+   "volume recall@5%": 0.26189110544293864,
+   "lift@5%": 5.8181818181818175
+  },
+  {
+   "model": "M3",
+   "markets": 866,
+   "disputed": 55,
+   "rate": 0.06351039260969978,
+   "ROC-AUC": 0.8258491200538056,
+   "PR-AUC": 0.2750670469384385,
+   "recall@5%": 0.2727272727272727,
+   "volume recall@5%": 0.2499367887425806,
+   "lift@5%": 5.454545454545454
+  },
+  {
+   "model": "M0v",
+   "markets": 866,
+   "disputed": 55,
+   "rate": 0.06351039260969978,
+   "ROC-AUC": 0.7848223293352763,
+   "PR-AUC": 0.18887402728545083,
+   "recall@5%": 0.2,
+   "volume recall@5%": 0.5194539714165605,
+   "lift@5%": 4.0
+  },
+  {
+   "model": "M2v",
+   "markets": 866,
+   "disputed": 55,
+   "rate": 0.06351039260969978,
+   "ROC-AUC": 0.824705750476404,
+   "PR-AUC": 0.2846519235874054,
+   "recall@5%": 0.2909090909090909,
+   "volume recall@5%": 0.26468517208795095,
+   "lift@5%": 5.8181818181818175
+  }
+ ],
+ "C": {
+  "prior": 1.0,
+  "M0": 1.0,
+  "M1": 1.0,
+  "M2": 1.0,
+  "M3": 1.0,
+  "M0v": 1.0,
+  "M2v": 1.0
+ },
+ "H1": {
+  "PR-AUC": {
+   "diff": 0.11824948762416915,
+   "lo": 0.03469856325821524,
+   "hi": 0.2312806971154831,
+   "p_one_sided": 0.002997002997002997,
+   "n_boot": 1000
+  },
+  "recall@5%": {
+   "diff": 0.16363636363636364,
+   "lo": 0.01694915254237289,
+   "hi": 0.3148391812865497,
+   "p_one_sided": 0.022977022977022976,
+   "n_boot": 1000
+  }
+ },
+ "H2": {
+  "PR-AUC": {
+   "diff": 0.09577789630195455,
+   "lo": 0.011891060131969883,
+   "hi": 0.19471412453259576,
+   "p_one_sided": 0.008991008991008992,
+   "n_boot": 1000
+  },
+  "recall@5%": {
+   "diff": 0.09090909090909088,
+   "lo": -0.01643815201192252,
+   "hi": 0.25,
+   "p_one_sided": 0.06893106893106893,
+   "n_boot": 1000
+  }
+ },
+ "M3_vs_M2": {
+  "PR-AUC": {
+   "diff": -0.002435485330494258,
+   "lo": -0.007338596232471015,
+   "hi": 0.0009545841371495319,
+   "p_one_sided": 0.9210789210789211,
+   "n_boot": 1000
+  },
+  "recall@5%": {
+   "diff": -0.018181818181818188,
+   "lo": -0.040816326530612235,
+   "hi": 0.03705450733752619,
+   "p_one_sided": 0.9110889110889111,
+   "n_boot": 1000
+  }
+ },
+ "quintiles": [
+  {
+   "volume quintile": 1,
+   "markets": 174,
+   "min volume": 10085.35,
+   "disputed": 6,
+   "M0 AUC": 0.8120039682539683,
+   "M2 AUC": 0.8204365079365079
+  },
+  {
+   "volume quintile": 2,
+   "markets": 173,
+   "min volume": 21949.72,
+   "disputed": 9,
+   "M0 AUC": 0.7123983739837397,
+   "M2 AUC": 0.7642276422764227
+  },
+  {
+   "volume quintile": 3,
+   "markets": 173,
+   "min volume": 38351.75,
+   "disputed": 10,
+   "M0 AUC": 0.7644171779141105,
+   "M2 AUC": 0.8680981595092024
+  },
+  {
+   "volume quintile": 4,
+   "markets": 173,
+   "min volume": 72426.03,
+   "disputed": 16,
+   "M0 AUC": 0.8349920382165605,
+   "M2 AUC": 0.8801751592356688
+  },
+  {
+   "volume quintile": 5,
+   "markets": 173,
+   "min volume": 153834.5,
+   "disputed": 14,
+   "M0 AUC": 0.6967654986522911,
+   "M2 AUC": 0.7646001796945193
+  }
+ ],
+ "templates": [
+  {
+   "test markets": "template seen in training",
+   "markets": 189,
+   "disputed": 1,
+   "M0 PR-AUC": 0.011235955056179775,
+   "M2 PR-AUC": 0.012048192771084338,
+   "M3 PR-AUC": 0.015384615384615385
+  },
+  {
+   "test markets": "new template",
+   "markets": 677,
+   "disputed": 54,
+   "M0 PR-AUC": 0.1647824870723175,
+   "M2 PR-AUC": 0.2847190869213063,
+   "M3 PR-AUC": 0.2811816550684163
+  }
+ ],
+ "H3": [
+  {
+   "flag": "consensus_undefined",
+   "share flagged": 0.13849958779884583,
+   "odds ratio": 2.920726885537684,
+   "95% CI low": 2.1412386727207147,
+   "95% CI high": 3.9844760274011586,
+   "p (one-sided)": 7.375569008118068e-12,
+   "Holm p": 2.950227603247227e-11
+  },
+  {
+   "flag": "event_vs_announcement",
+   "share flagged": 0.104080791426216,
+   "odds ratio": 2.2801792668543532,
+   "95% CI low": 1.6441746716252297,
+   "95% CI high": 3.06621342869163,
+   "p (one-sided)": 9.071238408921891e-07,
+   "Holm p": 2.7213715226765673e-06
+  },
+  {
+   "flag": "undefined_term",
+   "share flagged": 0.35758450123660346,
+   "odds ratio": 2.2362520190770505,
+   "95% CI low": 1.5429887324441496,
+   "95% CI high": 3.4008701420942096,
+   "p (one-sided)": 1.5516941412727367e-05,
+   "Holm p": 3.1033882825454734e-05
+  },
+  {
+   "flag": "no_source",
+   "share flagged": 0.6286067600989282,
+   "odds ratio": 1.4990837812777424,
+   "95% CI low": 1.1323617875097696,
+   "95% CI high": 2.158731900048313,
+   "p (one-sided)": 0.008053213715688535,
+   "Holm p": 0.008053213715688535
+  }
+ ],
+ "checks": [
+  {
+   "check": "M2 as fitted",
+   "PR-AUC": 0.27750253226893273,
+   "what it should show": "the main result"
+  },
+  {
+   "check": "M0 (no words)",
+   "PR-AUC": 0.1592530446447636,
+   "what it should show": "the bar M2 must clear"
+  },
+  {
+   "check": "placebo: each market gets another market's text (same category, quarter)",
+   "PR-AUC": 0.16988750636410715,
+   "what it should show": "about M0: the words carry the signal, not the mix"
+  },
+  {
+   "check": "unstripped: Gamma's current rules, clarifications included",
+   "PR-AUC": 0.5868543947150119,
+   "what it should show": "above M2 if post-listing text leaks the label"
+  }
+ ],
+ "robustness": [
+  {
+   "subset": "rules never updated after listing",
+   "markets": 836,
+   "disputed": 31,
+   "M0 PR-AUC": 0.09503152190124921,
+   "M2 PR-AUC": 0.18849464001257618,
+   "diff": 0.09346311811132697,
+   "p": 0.0029940119760479044
+  },
+  {
+   "subset": "volume >= $100k",
+   "markets": 266,
+   "disputed": 23,
+   "M0 PR-AUC": 0.19740700122104288,
+   "M2 PR-AUC": 0.34902572871198084,
+   "diff": 0.15161872749093797,
+   "p": 0.0029940119760479044
+  },
+  {
+   "subset": "labels: API was_disputed only",
+   "markets": 866,
+   "disputed": 55,
+   "M0 PR-AUC": 0.1592530446447636,
+   "M2 PR-AUC": 0.27750253226893273,
+   "diff": 0.11824948762416915,
+   "p": 0.0029940119760479044
+  },
+  {
+   "subset": "labels: on-chain disputes only",
+   "markets": 488,
+   "disputed": 55,
+   "M0 PR-AUC": 0.24811560537530034,
+   "M2 PR-AUC": 0.4288249561550303,
+   "diff": 0.18070935077972997,
+   "p": 0.0029940119760479044
+  },
+  {
+   "subset": "labels: Gamma statuses only",
+   "markets": 866,
+   "disputed": 55,
+   "M0 PR-AUC": 0.1592530446447636,
+   "M2 PR-AUC": 0.27750253226893273,
+   "diff": 0.11824948762416915,
+   "p": 0.0029940119760479044
+  },
+  {
+   "subset": "event level (any market disputed; max score)",
+   "markets": 596,
+   "disputed": 44,
+   "M0 PR-AUC": 0.1639499712676386,
+   "M2 PR-AUC": 0.312445470427211,
+   "diff": 0.14849549915957239,
+   "p": NaN
+  }
+ ],
+ "secondary": [
+  {
+   "outcome": "escalated",
+   "markets": 866,
+   "positives": 6,
+   "rate": 0.006928406466512702,
+   "M0 PR-AUC": 0.033571538587949916,
+   "M2 PR-AUC": 0.061742594409440986
+  },
+  {
+   "outcome": "rules_updated",
+   "markets": 866,
+   "positives": 30,
+   "rate": 0.03464203233256351,
+   "M0 PR-AUC": 0.10249280906181683,
+   "M2 PR-AUC": 0.14197491391274372
+  },
+  {
+   "outcome": "overturned: first proposal lost (disputed markets, all years)",
+   "markets": 376,
+   "positives": 193,
+   "rate": 0.5132978723404256,
+   "M0 PR-AUC": NaN,
+   "M2 PR-AUC": NaN
+  }
+ ],
+ "listing_text": {
+  "markets with on-chain listing text": 376,
+  "Gamma rules identical to listing text": 198,
+  "identical after stripping post-listing text": 376
+ },
+ "runtime_s": 113.7
+}

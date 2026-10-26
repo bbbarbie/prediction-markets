@@ -1,0 +1,5 @@
+Title: Will Country A and Country B sign a permanent peace agreement by March 31?
+
+This market will resolve to "Yes" if the governments of Country A and Country B sign a written agreement that both describe as ending the conflict permanently, on or before March 31, 2026, 11:59 PM ET. For the purposes of this market, a signed written agreement will count; a framework, memorandum of understanding or statement of intent will not count. The signing must occur by the deadline; confirmation published up to 7 days later counts if it shows the signing occurred by the deadline.
+
+The primary resolution source will be official statements from either government; if they disagree, reporting by at least two of AP, Reuters and Bloomberg will be used. If no agreement is signed by the deadline, this market will resolve to "No".

@@ -1,0 +1,5 @@
+family,subfamily,series,events,markets,multi_outcome
+continuous_public,sports,SYNRACE,155,874,1.0
+continuous_public,sports,SYNGAME,245,245,0.0
+scheduled_reveal,award,SYNAWARD,309,1734,1.0
+scheduled_reveal,named_person,SYNATTEND,491,491,0.0

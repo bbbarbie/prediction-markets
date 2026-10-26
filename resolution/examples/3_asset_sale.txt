@@ -1,0 +1,3 @@
+Title: Will Company X sell any of its bitcoin by June 30?
+
+This market will resolve to "Yes" if Company X sells any of its bitcoin holdings between April 1 and June 30, 2026. Resolution will be based on Company X's official announcements and regulatory filings. Otherwise, this market will resolve to "No".
